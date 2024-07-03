@@ -69,6 +69,7 @@ function Home() {
       {bestData! && productData! && (
         <>
           <HomeCarousel featuredItems={bestData.result} />
+          {/* @ts-ignore */}
           <ProductGrid items={productData.result} />
         </>
       )}

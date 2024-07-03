@@ -25,7 +25,6 @@ export const GET = async (
       : null;
 
   const info = CMSSupaIdProduct(Products ?? []);
-  console.log(info)
   const data: fetchIdProduct = { result: info, rating };
   return NextResponse.json(data);
 };

@@ -9,7 +9,7 @@ export const PUT = async (req: NextRequest) => {
   let { data: Products, error } = await supabase.from("Products").select().in("id", ids)
   
   const info = Products ?? []
-  const data: fetchQuantities[] = info.map(({id, qty}) => ({id: id.toString(), quantity: qty}))
+  const data: fetchQuantities[] = info.map(({id, qty}: {id: number; qty: string}) => ({id: id.toString(), quantity: qty}))
 
   return NextResponse.json(data);
 };

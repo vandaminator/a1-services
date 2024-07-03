@@ -1,4 +1,4 @@
-import { Product } from "@/app/page";
+import { Product } from "@/types/index";
 import ProductCard from "./ProductCard";
 
 type Props = {
