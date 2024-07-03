@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text: #ede8e3;
+    --background: #140f0a;
+    --primary: #fe8800;
+    --secondary: #835521;
+    --accent: #de8d35;
+  }
+  .dark {
+    --text: #fbe5f0;
+    --background: #280618;
+    --primary: #e76569;
+    --secondary: #072c18;
+    --accent: #22ddd6;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  input,
+  select {
+    color: #000;
+  }
+}
